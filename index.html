@@ -1,104 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Om Deshpande - College Admissions Student Profile">
-  <title>Om Deshpande | Student Profile</title>
-  <style>
-    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f6f8fb;line-height:1.6}
-    header{background:linear-gradient(135deg,#102a43,#1f5f8b);color:white;padding:64px 20px;text-align:center}
-    header h1{font-size:42px;margin:0 0 8px} header p{font-size:19px;margin:4px 0}
-    nav{background:white;padding:14px;text-align:center;position:sticky;top:0;box-shadow:0 2px 8px #0002}
-    nav a{color:#173f5f;text-decoration:none;font-weight:bold;margin:0 12px}
-    main{max-width:1000px;margin:auto;padding:28px 18px}
-    section{background:white;border-radius:14px;padding:28px;margin:22px 0;box-shadow:0 3px 14px #0001}
-    h2{color:#173f5f;margin-top:0;border-bottom:2px solid #e8eef4;padding-bottom:8px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-    .card{background:#f7f9fc;border-radius:10px;padding:18px}
-    .card h3{margin-top:0;color:#245b82}
-    .tag{display:inline-block;background:#e6f0f8;color:#173f5f;padding:7px 11px;border-radius:18px;margin:4px;font-weight:bold}
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-    .photo{min-height:170px;border:2px dashed #bbc8d5;border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:#657789;background:#fafcff}
-    footer{text-align:center;padding:30px;color:#657789}
-    @media(max-width:600px){header h1{font-size:34px}nav a{display:inline-block;margin:5px 7px}section{padding:21px}}
-  </style>
-</head>
-<body>
-<header>
-  <h1>Om Deshpande</h1>
-  <p>Student • Leader • Mentor • Technology Enthusiast</p>
-  <p>Class of 2027</p>
-</header>
-
-<nav>
-  <a href="#about">About</a>
-  <a href="#academics">Academics</a>
-  <a href="#leadership">Leadership</a>
-  <a href="#activities">Activities</a>
-  <a href="#gallery">Gallery</a>
-</nav>
-
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Om Deshpande | Student Profile</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#172033;background:#f6f8fb;line-height:1.6}
+header{background:linear-gradient(135deg,#102a43,#1f5f8b);color:#fff;padding:55px 20px;text-align:center}
+.hero{width:180px;height:180px;object-fit:cover;object-position:50% 22%;border-radius:50%;border:5px solid #fff;margin-bottom:14px}
+header h1{font-size:42px;margin:0}header p{font-size:18px;margin:5px}
+nav{background:#fff;padding:13px;text-align:center;position:sticky;top:0;z-index:3;box-shadow:0 2px 8px #0002}
+nav a{color:#173f5f;text-decoration:none;font-weight:bold;margin:0 10px}
+main{max-width:1050px;margin:auto;padding:25px 17px}section{background:#fff;border-radius:14px;padding:27px;margin:22px 0;box-shadow:0 3px 14px #0001}
+h2{color:#173f5f;border-bottom:2px solid #e8eef4;padding-bottom:8px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#f7f9fc;border-radius:10px;padding:18px}.card h3{color:#245b82;margin-top:0}
+.tags span{display:inline-block;background:#e6f0f8;color:#173f5f;padding:7px 11px;border-radius:18px;margin:4px;font-weight:bold}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}.gallery figure{margin:0;background:#f7f9fc;border-radius:11px;overflow:hidden}
+.gallery img{width:100%;height:300px;object-fit:cover;display:block}.gallery figcaption{padding:10px 12px;font-weight:bold;color:#334e68}
+footer{text-align:center;padding:30px;color:#657789}@media(max-width:600px){header h1{font-size:34px}.hero{width:145px;height:145px}.gallery img{height:270px}}
+</style></head><body>
+<header><img class="hero" src="om-profile.jpg" alt="Om Deshpande"><h1>Om Deshpande</h1><p>Student • Leader • Mentor • Technology Enthusiast</p><p>Class of 2027</p></header>
+<nav><a href="#about">About</a><a href="#academics">Academics</a><a href="#leadership">Leadership</a><a href="#activities">Activities</a><a href="#gallery">Gallery</a></nav>
 <main>
-<section id="about">
-  <h2>About Me</h2>
-  <p>I am a high school student with interests spanning technology, leadership, service, and business. My experiences in Civil Air Patrol, martial arts, coaching younger students, DECA, cross country, and hands-on projects have helped me develop discipline, teamwork, communication, and problem-solving skills.</p>
-</section>
-
-<section id="academics">
-  <h2>Academic & Career Interests</h2>
-  <div class="grid">
-    <div class="card"><h3>Technology</h3><p>Interested in Computer Science, Cybersecurity, Artificial Intelligence, and Computer Engineering.</p></div>
-    <div class="card"><h3>Engineering</h3><p>Exploring Aerospace, aviation, and technology-driven engineering fields.</p></div>
-    <div class="card"><h3>Business</h3><p>Interested in finance, entrepreneurship, leadership, and practical business experience.</p></div>
-  </div>
-</section>
-
-<section id="leadership">
-  <h2>Leadership & Service</h2>
-  <div class="grid">
-    <div class="card"><h3>Civil Air Patrol</h3><p>Three years of participation, including leadership responsibilities. CAP has strengthened my teamwork, discipline, service mindset, and leadership skills.</p></div>
-    <div class="card"><h3>Coding Coach</h3><p>Two years helping teach and coach younger students in coding, building communication skills while helping children develop confidence with technology.</p></div>
-    <div class="card"><h3>Community Service</h3><p>Extensive volunteer involvement supporting community and youth-focused activities.</p></div>
-  </div>
-</section>
-
-<section id="activities">
-  <h2>Activities & Accomplishments</h2>
-  <div>
-    <span class="tag">Civil Air Patrol</span>
-    <span class="tag">Black Belt — Karate</span>
-    <span class="tag">Coding Coach</span>
-    <span class="tag">DECA — Cross Creek</span>
-    <span class="tag">Cross Country</span>
-    <span class="tag">Community Service</span>
-    <span class="tag">Automotive Projects</span>
-  </div>
-  <p><strong>Automotive project:</strong> Completed vehicle wrapping work on my own car and helped wrap two friends' cars, gaining practical experience in planning, precision, patience, and hands-on problem solving.</p>
-</section>
-
-<section id="gallery">
-  <h2>Activities Gallery</h2>
-  <p>Photos can be added here after the website is uploaded to GitHub.</p>
-  <div class="gallery">
-    <div class="photo">Om — Profile Photo</div>
-    <div class="photo">Civil Air Patrol Activities</div>
-    <div class="photo">Karate Black Belt</div>
-    <div class="photo">Cross Country</div>
-    <div class="photo">DECA / School Activities</div>
-    <div class="photo">Projects & Community Service</div>
-  </div>
-</section>
-
-<section>
-  <h2>What I Bring to a College Community</h2>
-  <p>I bring a combination of technical curiosity, leadership experience, perseverance, service, and a willingness to learn by doing. I look forward to continuing to develop these strengths in college while contributing to campus organizations and the wider community.</p>
-</section>
-</main>
-
-<footer>
-  <strong>Om Deshpande</strong><br>
-  College Admissions Profile • Class of 2027
-</footer>
-</body>
-</html>
+<section id="about"><h2>About Me</h2><p>I am a high school student interested in technology, leadership, service, business, and aviation. My experiences in Civil Air Patrol, martial arts, coaching younger students, DECA, cross country, and hands-on projects have strengthened my discipline, teamwork, communication, and problem-solving skills.</p></section>
+<section id="academics"><h2>Academic & Career Interests</h2><div class="grid"><div class="card"><h3>Technology</h3><p>Computer Science, Cybersecurity, Artificial Intelligence, and Computer Engineering.</p></div><div class="card"><h3>Engineering & Aviation</h3><p>Aerospace, aviation, and technology-driven engineering fields.</p></div><div class="card"><h3>Business</h3><p>Finance, entrepreneurship, leadership, and practical business experience.</p></div></div></section>
+<section id="leadership"><h2>Leadership & Service</h2><div class="grid"><div class="card"><h3>Civil Air Patrol</h3><p>Three years of participation, including leadership responsibilities, developing teamwork, discipline, service, and leadership.</p></div><div class="card"><h3>Coding Coach</h3><p>Two years helping teach and coach younger students in coding and technology.</p></div><div class="card"><h3>Community Service</h3><p>Volunteer involvement supporting community and youth-focused activities.</p></div></div></section>
+<section id="activities"><h2>Activities & Accomplishments</h2><div class="tags"><span>Civil Air Patrol</span><span>Karate Black Belt</span><span>Coding Coach</span><span>DECA — Cross Creek</span><span>Cross Country</span><span>Community Service</span><span>Automotive Projects</span></div><p><strong>Automotive project:</strong> Completed vehicle wrapping work on my own car and helped wrap two friends' cars, building skills in planning, precision, patience, and hands-on problem solving.</p></section>
+<section id="gallery"><h2>Activities Gallery</h2><div class="gallery">
+<figure><img src="cap-aircraft.jpg" alt="Civil Air Patrol aviation activity"><figcaption>Civil Air Patrol — Aviation</figcaption></figure>
+<figure><img src="cap-cockpit.jpg" alt="Civil Air Patrol cockpit experience"><figcaption>Civil Air Patrol — Cockpit Experience</figcaption></figure>
+<figure><img src="cap-aircraft-2.jpg" alt="Civil Air Patrol activity"><figcaption>Civil Air Patrol</figcaption></figure>
+<figure><img src="karate-certificate.jpg" alt="Karate black belt achievement"><figcaption>Karate — Black Belt Achievement</figcaption></figure>
+<figure><img src="karate-team.jpg" alt="Karate team"><figcaption>Karate — Team & Training</figcaption></figure>
+<figure><img src="cross-country-1.jpg" alt="Cross country race"><figcaption>Cross Country</figcaption></figure>
+<figure><img src="cross-country-2.jpg" alt="Cross country competition"><figcaption>Cross Country — Competition</figcaption></figure>
+<figure><img src="cross-country-3.jpg" alt="Cross country race"><figcaption>Cross Country — Race Day</figcaption></figure>
+</div></section>
+<section><h2>What I Bring to a College Community</h2><p>I bring technical curiosity, leadership experience, perseverance, service, and a willingness to learn by doing. I look forward to developing these strengths in college while contributing to campus organizations and the wider community.</p></section>
+</main><footer><strong>Om Deshpande</strong><br>College Admissions Profile • Class of 2027</footer></body></html>
