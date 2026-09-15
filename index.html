@@ -1,37 +1,76 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Om Deshpande | Student Profile</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Om Deshpande — student portfolio, leadership, service, technology and aviation.">
+<title>Om Deshpande | Student Portfolio</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#172033;background:#f6f8fb;line-height:1.6}
-header{background:linear-gradient(135deg,#102a43,#1f5f8b);color:#fff;padding:55px 20px;text-align:center}
-.hero{width:180px;height:180px;object-fit:cover;object-position:50% 22%;border-radius:50%;border:5px solid #fff;margin-bottom:14px}
-header h1{font-size:42px;margin:0}header p{font-size:18px;margin:5px}
-nav{background:#fff;padding:13px;text-align:center;position:sticky;top:0;z-index:3;box-shadow:0 2px 8px #0002}
-nav a{color:#173f5f;text-decoration:none;font-weight:bold;margin:0 10px}
-main{max-width:1050px;margin:auto;padding:25px 17px}section{background:#fff;border-radius:14px;padding:27px;margin:22px 0;box-shadow:0 3px 14px #0001}
-h2{color:#173f5f;border-bottom:2px solid #e8eef4;padding-bottom:8px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{background:#f7f9fc;border-radius:10px;padding:18px}.card h3{color:#245b82;margin-top:0}
-.tags span{display:inline-block;background:#e6f0f8;color:#173f5f;padding:7px 11px;border-radius:18px;margin:4px;font-weight:bold}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}.gallery figure{margin:0;background:#f7f9fc;border-radius:11px;overflow:hidden}
-.gallery img{width:100%;height:300px;object-fit:cover;display:block}.gallery figcaption{padding:10px 12px;font-weight:bold;color:#334e68}
-footer{text-align:center;padding:30px;color:#657789}@media(max-width:600px){header h1{font-size:34px}.hero{width:145px;height:145px}.gallery img{height:270px}}
-</style></head><body>
-<header><img class="hero" src="om-profile.jpg" alt="Om Deshpande"><h1>Om Deshpande</h1><p>Student • Leader • Mentor • Technology Enthusiast</p><p>Class of 2027</p></header>
-<nav><a href="#about">About</a><a href="#academics">Academics</a><a href="#leadership">Leadership</a><a href="#activities">Activities</a><a href="#gallery">Gallery</a></nav>
+:root{--ink:#0c1728;--muted:#657083;--navy:#0b2748;--blue:#2d6cdf;--sky:#eaf2ff;--line:#e7ebf0;--paper:#fff;--bg:#f5f7fa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:#ffffffeb;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:850;letter-spacing:-.02em}.links{display:flex;gap:24px}.links a{text-decoration:none;color:#4e5a6d;font-size:14px;font-weight:650}
+.hero{padding:72px 0 56px;background:radial-gradient(circle at 85% 20%,#dceaff 0,transparent 31%),linear-gradient(180deg,#fff,#f5f8fc)}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}.eyebrow{display:inline-flex;padding:7px 11px;border-radius:999px;background:var(--sky);color:#2456a6;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(48px,7vw,78px);line-height:.96;letter-spacing:-.055em;margin:18px 0 20px}.lead{font-size:20px;line-height:1.65;color:#536074;max-width:700px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}.chip{padding:9px 13px;background:#fff;border:1px solid #dde4ed;border-radius:999px;font-size:13px;font-weight:700;color:#344156}
+.portrait-wrap{position:relative}.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;border-radius:28px;box-shadow:0 24px 60px #18345b26}
+.float{position:absolute;left:-28px;bottom:28px;background:#fff;padding:14px 17px;border-radius:16px;box-shadow:0 15px 40px #1b355229;font-size:13px}.float strong{display:block;font-size:20px;color:var(--navy)}
+section{padding:72px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.kicker{color:var(--blue);font-size:12px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}.section-head h2{font-size:38px;letter-spacing:-.035em;margin:7px 0 0}.section-head p{max-width:510px;color:var(--muted);line-height:1.6;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 7px 24px #12233b0a}.num{font-size:12px;color:var(--blue);font-weight:850}.card h3{font-size:20px;margin:35px 0 9px}.card p{margin:0;color:var(--muted);line-height:1.65;font-size:14px}
+.dark{background:var(--navy);color:#fff}.dark .section-head p{color:#b9c6d6}.dark .kicker{color:#7db2ff}
+.timeline{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.item{border:1px solid #ffffff1f;background:#ffffff0a;border-radius:18px;padding:22px}.item b{font-size:18px}.item p{color:#b9c6d6;line-height:1.6;margin-bottom:0}.tag{display:inline-block;color:#91baff;font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:230px;gap:12px}.shot{position:relative;overflow:hidden;border-radius:18px;background:#ddd}.shot img{width:100%;height:100%;object-fit:cover;transition:.35s}.shot:hover img{transform:scale(1.025)}.shot:nth-child(1){grid-column:span 7;grid-row:span 2}.shot:nth-child(2){grid-column:span 5}.shot:nth-child(3){grid-column:span 5}.shot:nth-child(n+4){grid-column:span 4}.cap{position:absolute;left:12px;bottom:12px;background:#0b1729cc;color:#fff;padding:7px 10px;border-radius:9px;font-size:12px;font-weight:700;backdrop-filter:blur(8px)}
+.quote{background:linear-gradient(135deg,#eaf2ff,#fff);border:1px solid #dfe9f7;border-radius:26px;padding:38px;font-size:27px;line-height:1.4;letter-spacing:-.025em}.quote small{display:block;margin-top:18px;color:var(--muted);font-size:13px;letter-spacing:0}
+footer{padding:35px 0 50px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between}
+@media(max-width:760px){.links{display:none}.hero{padding-top:45px}.hero-grid{grid-template-columns:1fr}.portrait-wrap{max-width:420px}.float{left:12px}.cards,.timeline{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:12px}.gallery{grid-template-columns:1fr;grid-auto-rows:270px}.shot,.shot:nth-child(n){grid-column:auto;grid-row:auto}section{padding:52px 0}.foot{display:block}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><div class="brand">OM DESHPANDE</div><div class="links"><a href="#story">Story</a><a href="#leadership">Leadership</a><a href="#gallery">Gallery</a><a href="#interests">Interests</a></div></div></nav>
+
+<header class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">Class of 2027 · Student Portfolio</span><h1>Curious mind.<br>Disciplined leader.</h1>
+<p class="lead">I’m Om Deshpande — a student exploring the intersection of technology, aviation, leadership, business and hands-on problem solving.</p>
+<div class="chips"><span class="chip">Civil Air Patrol</span><span class="chip">Karate Black Belt</span><span class="chip">Coding Coach</span><span class="chip">Cross Country</span><span class="chip">DECA</span></div></div>
+<div class="portrait-wrap"><img class="portrait" src="om-profile.jpg" alt="Om Deshpande"><div class="float"><strong>2027</strong>High School Graduation</div></div>
+</div></header>
+
 <main>
-<section id="about"><h2>About Me</h2><p>I am a high school student interested in technology, leadership, service, business, and aviation. My experiences in Civil Air Patrol, martial arts, coaching younger students, DECA, cross country, and hands-on projects have strengthened my discipline, teamwork, communication, and problem-solving skills.</p></section>
-<section id="academics"><h2>Academic & Career Interests</h2><div class="grid"><div class="card"><h3>Technology</h3><p>Computer Science, Cybersecurity, Artificial Intelligence, and Computer Engineering.</p></div><div class="card"><h3>Engineering & Aviation</h3><p>Aerospace, aviation, and technology-driven engineering fields.</p></div><div class="card"><h3>Business</h3><p>Finance, entrepreneurship, leadership, and practical business experience.</p></div></div></section>
-<section id="leadership"><h2>Leadership & Service</h2><div class="grid"><div class="card"><h3>Civil Air Patrol</h3><p>Three years of participation, including leadership responsibilities, developing teamwork, discipline, service, and leadership.</p></div><div class="card"><h3>Coding Coach</h3><p>Two years helping teach and coach younger students in coding and technology.</p></div><div class="card"><h3>Community Service</h3><p>Volunteer involvement supporting community and youth-focused activities.</p></div></div></section>
-<section id="activities"><h2>Activities & Accomplishments</h2><div class="tags"><span>Civil Air Patrol</span><span>Karate Black Belt</span><span>Coding Coach</span><span>DECA — Cross Creek</span><span>Cross Country</span><span>Community Service</span><span>Automotive Projects</span></div><p><strong>Automotive project:</strong> Completed vehicle wrapping work on my own car and helped wrap two friends' cars, building skills in planning, precision, patience, and hands-on problem solving.</p></section>
-<section id="gallery"><h2>Activities Gallery</h2><div class="gallery">
-<figure><img src="cap-aircraft.jpg" alt="Civil Air Patrol aviation activity"><figcaption>Civil Air Patrol — Aviation</figcaption></figure>
-<figure><img src="cap-cockpit.jpg" alt="Civil Air Patrol cockpit experience"><figcaption>Civil Air Patrol — Cockpit Experience</figcaption></figure>
-<figure><img src="cap-aircraft-2.jpg" alt="Civil Air Patrol activity"><figcaption>Civil Air Patrol</figcaption></figure>
-<figure><img src="karate-certificate.jpg" alt="Karate black belt achievement"><figcaption>Karate — Black Belt Achievement</figcaption></figure>
-<figure><img src="karate-team.jpg" alt="Karate team"><figcaption>Karate — Team & Training</figcaption></figure>
-<figure><img src="cross-country-1.jpg" alt="Cross country race"><figcaption>Cross Country</figcaption></figure>
-<figure><img src="cross-country-2.jpg" alt="Cross country competition"><figcaption>Cross Country — Competition</figcaption></figure>
-<figure><img src="cross-country-3.jpg" alt="Cross country race"><figcaption>Cross Country — Race Day</figcaption></figure>
+<section id="story"><div class="wrap"><div class="section-head"><div><div class="kicker">My story</div><h2>Learning by doing</h2></div><p>My experiences inside and outside school have taught me to stay curious, take responsibility and keep improving — whether I’m working with a team, mentoring younger students or solving a practical problem.</p></div>
+<div class="cards">
+<div class="card"><div class="num">01</div><h3>Technology</h3><p>Interested in computer science, cybersecurity, artificial intelligence and computer engineering, with experience helping younger students learn coding.</p></div>
+<div class="card"><div class="num">02</div><h3>Aviation & Engineering</h3><p>Civil Air Patrol has given me a closer look at aviation while strengthening my interest in aerospace and technology-driven engineering.</p></div>
+<div class="card"><div class="num">03</div><h3>Business & Initiative</h3><p>DECA and hands-on projects have helped me think about entrepreneurship, planning, execution and how ideas become real outcomes.</p></div>
+</div></div></section>
+
+<section id="leadership" class="dark"><div class="wrap"><div class="section-head"><div><div class="kicker">Beyond the classroom</div><h2>Leadership in action</h2></div><p>I value experiences that require consistency, teamwork, service and personal accountability.</p></div>
+<div class="timeline">
+<div class="item"><span class="tag">Leadership · 3 years</span><br><b>Civil Air Patrol</b><p>Leadership responsibilities and aviation experiences that build teamwork, discipline, responsibility and a service mindset.</p></div>
+<div class="item"><span class="tag">Mentorship · 2 years</span><br><b>Coding Coach</b><p>Helping younger students learn coding has strengthened my communication, patience and ability to make technical ideas understandable.</p></div>
+<div class="item"><span class="tag">Discipline</span><br><b>Karate Black Belt</b><p>Years of training taught me persistence, focus, respect and the value of steady progress toward a difficult goal.</p></div>
+<div class="item"><span class="tag">Endurance</span><br><b>Cross Country</b><p>Distance running reinforces consistency, time management and the willingness to keep going when the work gets difficult.</p></div>
+<div class="item"><span class="tag">Business</span><br><b>DECA — Cross Creek</b><p>Exploring business, entrepreneurship, presentation and professional development alongside my technology interests.</p></div>
+<div class="item"><span class="tag">Hands-on project</span><br><b>Automotive Wrapping</b><p>Wrapped my own vehicle and helped two friends with theirs — a project requiring planning, precision, patience and troubleshooting.</p></div>
+</div></div></section>
+
+<section id="gallery"><div class="wrap"><div class="section-head"><div><div class="kicker">Experiences</div><h2>Moments that shaped me</h2></div><p>A selection of experiences across aviation, martial arts and athletics.</p></div>
+<div class="gallery">
+<div class="shot"><img src="cap-aircraft.jpg" alt="Civil Air Patrol aviation"><span class="cap">Civil Air Patrol · Aviation</span></div>
+<div class="shot"><img src="cap-cockpit.jpg" alt="Cockpit experience"><span class="cap">Cockpit Experience</span></div>
+<div class="shot"><img src="cap-aircraft-2.jpg" alt="Civil Air Patrol"><span class="cap">Civil Air Patrol</span></div>
+<div class="shot"><img src="karate-certificate.jpg" alt="Karate black belt"><span class="cap">Black Belt Achievement</span></div>
+<div class="shot"><img src="karate-team.jpg" alt="Karate training"><span class="cap">Karate · Team & Training</span></div>
+<div class="shot"><img src="cross-country-1.jpg" alt="Cross country"><span class="cap">Cross Country</span></div>
+<div class="shot"><img src="cross-country-2.jpg" alt="Cross country competition"><span class="cap">Competition</span></div>
+<div class="shot"><img src="cross-country-3.jpg" alt="Cross country race"><span class="cap">Race Day</span></div>
+</div></div></section>
+
+<section id="interests"><div class="wrap"><div class="section-head"><div><div class="kicker">Looking forward</div><h2>Where I want to grow</h2></div><p>I’m exploring college programs where technology, problem solving and leadership can connect to meaningful real-world challenges.</p></div>
+<div class="quote">“I want to keep building the skills to understand complex problems, work well with people and turn ideas into something useful.”<small>— Om Deshpande · Student Portfolio</small></div>
+<div class="chips" style="margin-top:22px"><span class="chip">Computer Science</span><span class="chip">Cybersecurity</span><span class="chip">Artificial Intelligence</span><span class="chip">Computer Engineering</span><span class="chip">Aerospace & Aviation</span><span class="chip">Finance & Business</span></div>
 </div></section>
-<section><h2>What I Bring to a College Community</h2><p>I bring technical curiosity, leadership experience, perseverance, service, and a willingness to learn by doing. I look forward to developing these strengths in college while contributing to campus organizations and the wider community.</p></section>
-</main><footer><strong>Om Deshpande</strong><br>College Admissions Profile • Class of 2027</footer></body></html>
+</main>
+<footer><div class="wrap foot"><strong>OM DESHPANDE</strong><span>Student Portfolio · Class of 2027</span></div></footer>
+</body></html>
